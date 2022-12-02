@@ -13,6 +13,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
     />
+    <link rel="stylesheet" href="./css/main.min.css">
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
@@ -118,7 +119,7 @@
       <!-- секція:перелік послуг, які може надати компанія -->
       <section class="section services-section">
         <div class="container">
-          <h2 class="services-section__title">Чим ми займаємося</h2>
+          <h2 class="section__title">Чим ми займаємося</h2>
           <ul class="list-services list">
             <li class="list-services__item">
               <img
@@ -154,7 +155,7 @@
       <!-- секція:перелік працівників компанії -->
       <section class="section team-section">
         <div class="container">
-          <h2 class="team-section__title">Наша команда</h2>
+          <h2 class="section__title">Наша команда</h2>
           <ul class="list-team list">
             <li class="list-team__item">
               <img
@@ -330,7 +331,7 @@
       <!-- Секція: Постійні клієнти -->
       <section class="section customer-section">
         <div class="container">
-          <h2 class="customer-section__title">Постійні клієнти</h2>
+          <h2 class="section__title">Постійні клієнти</h2>
           <ul class="list customers-list">
             <li class="customers-list__item">
               <a class="link customers-list__link" href="">
@@ -468,8 +469,8 @@
           <div class="form-container" role="group">
             <label class="modal-label" for="user_name">Ім'я</label>
             <div class="modal-input">
-              <input class="modal-input-field" type="text" name="user_name" id="user_name" />
-              <svg class="form-icon" width="18px" height="18px">
+              <input class="modal-input__field" type="text" name="user_name" id="user_name" />
+              <svg class="modal-input__icon" width="18px" height="18px">
                 <use href="./images/icons/icons.svg#icon-person"></use>
               </svg>
             </div>
@@ -477,12 +478,12 @@
             <label class="modal-label" for="user_phone">Телефон</label>
             <div class="modal-input">
               <input
-                class="modal-input-field"
+                class="modal-input__field"
                 type="tel"
                 name="user_phone"
                 id="user_phone"
               />
-              <svg class="form-icon" width="18px" height="18px">
+              <svg class="modal-input__icon" width="18px" height="18px">
                 <use href="./images/icons/icons.svg#icon-phone"></use>
               </svg>
               
@@ -490,28 +491,28 @@
 
             <label class="modal-label" for="user_mail">Пошта</label>
             <div class="modal-input">
-              <input class="modal-input-field" type="email" name="user_mail" id="user_mail" />
-              <svg class="form-icon" width="18px" height="18px">
+              <input class="modal-input__field" type="email" name="user_mail" id="user_mail" />
+              <svg class="modal-input__icon" width="18px" height="18px">
                 <use href="./images/icons/icons.svg#icon-email"></use>
               </svg>
             </div>
             <label class="modal-label" for="comment">Коментар</label>
             <textarea
-              class="modal-input-field textarea"
+              class="modal-input__field textarea"
               name="comment"
               placeholder="Введіть текст"
               id="comment"
             ></textarea>
             <div class="modal-agreement">
               <input class="checkbox-field visually-hidden" type="checkbox" name="agreement" id="agreement" />
-              <label class="agreement-text" for="agreement">
-                <svg class="uncheck-icon" width="16" height="15">
+              <label class="modal-agreement__text" for="agreement">
+                <svg class="modal-agreement__unmodal-agreement__check-icon" width="16" height="15">
                   <use href="./images/icons/icons.svg#icon-uncheck"></use>
                 </svg>
-                <svg class="check-icon" width="16" height="15">
+                <svg class="modal-agreement__check-icon" width="16" height="15">
                   <use href="./images/icons/icons.svg#icon-check"></use>
                 </svg>
-                  Погоджуюся з розсилкою та приймаю<a class="chekbox-link" href=""
+                  Погоджуюся з розсилкою та приймаю<a class="modal-agreement__chekbox-link" href=""
                   >Умови договору</a
                 ></label
               >

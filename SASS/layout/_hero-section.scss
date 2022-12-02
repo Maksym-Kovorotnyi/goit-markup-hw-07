@@ -1,0 +1,42 @@
+.hero {
+    background-color:var(--bcg-hero);
+    max-width: 1600px;
+    margin: auto;
+    padding-bottom: 200px;
+    padding-top: 200px;
+    text-align: center;
+    background-image:  linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../images/bcg_Img.jpg);
+    background-size: cover;
+    background-position: center;
+    
+}
+.hero__title {
+    color: var(--bcg-main);
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.4;
+    letter-spacing: 0.06em;
+    margin-bottom: 30px;
+    width: 696px;
+    margin-right: auto;
+    margin-left: auto; 
+}
+.hero__button {
+    background-color: var(--accent-color);
+    color: var(--bcg-main);
+    font-weight: 700;
+    line-height: 1.9;
+    letter-spacing: 0.06em;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    padding: 10px 32px;
+    transition-property: background-color;
+    transition-timing-function: var(--bezier);
+    transition-duration: 250ms;
+}
+.hero__button:hover,
+.hero__button:focus{
+    background-color: #188CE8;
+}

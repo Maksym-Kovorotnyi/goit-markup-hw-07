@@ -13,12 +13,13 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
     />
+    <link rel="stylesheet" href="./css/main.min.css">
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
     <!-- Хедер -->
     <header class="page-header">
-      <div class="container header-container">
+      <div class="header-container container ">
         <a href="./index.html" lang="en" class="logo link"
           ><span class="logo__accent">Web</span>Studio</a
         >
@@ -37,7 +38,7 @@
         </nav>
         <ul class="list-contacts contacts-container list">
           <li class="list-contacts__item">
-            <a href="mailto:info@devstudio.com" class="contact link">
+            <a href="mailto:info@devstudio.com" class="list-contact__link link">
               <svg class="list-contacts__icon" width="16" height="12">
                 <use href="./images/icons/icons.svg#mail"></use>
               </svg>
@@ -45,7 +46,7 @@
             </a>
           </li>
           <li class="list-contacts__item">
-            <a href="tel:+38096111111" class="contact link">
+            <a href="tel:+38096111111" class="list-contact__link link">
               <svg class="list-contacts__icon" width="10" height="16">
                 <use href="./images/icons/icons.svg#smartphone"></use>
               </svg>
@@ -57,212 +58,212 @@
     </header>
     <main>
       <!-- секція:головна сторінка -->
-      <section class="section main-portfolio">
+      <section class="section">
         <div class="container">
           <h1 class="visually-hidden">Портфоліо</h1>
-          <ul class="list-filter list">
+          <ul class="filter list">
             <li>
-              <button type="button" class="filter-button">Усі</button>
+              <button type="button" class="filter__button">Усі</button>
             </li>
             <li>
-              <button type="button" class="filter-button">Веб-сайти</button>
+              <button type="button" class="filter__button">Веб-сайти</button>
             </li>
             <li>
-              <button type="button" class="filter-button">Додатки</button>
+              <button type="button" class="filter__button">Додатки</button>
             </li>
             <li>
-              <button type="button" class="filter-button">Дизайн</button>
+              <button type="button" class="filter__button">Дизайн</button>
             </li>
             <li>
-              <button type="button" class="filter-button">Маркетинг</button>
+              <button type="button" class="filter__button">Маркетинг</button>
             </li>
           </ul>
-          <ul class="list-projects list">
-            <li class="project-item">
-              <a class="projects-link link" href="">
-                <div class="img-projects">
+          <ul class="projects list">
+            <li class="projects__item">
+              <a class="projects__link link" href="">
+                <div class="projects__img">
                   <img src="./images/portfolio1.jpg" alt="відкритий ноутбук" width="370" />
-                  <div class="overlay">
-                    <p class="overlay-text">
+                  <div class="projects__overlay">
+                    <p class="projects__overlay-text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                       Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
                       приватну особу.
                     </p>
                   </div>
                 </div>
-                <div class="projects-text-container">
-                  <h2 class="projects-subtitle">Технокряк</h2>
-                  <p class="projects-text">Веб-сайт</p>
+                <div class="projects__text-container">
+                  <h2 class="projects__subtitle">Технокряк</h2>
+                  <p class="projects__text">Веб-сайт</p>
                 </div>
               </a>
             </li>
-            <li class="project-item">
-              <a class="projects-link link" href="">
-                <div class="img-projects">
+            <li class="projects__item">
+              <a class="projects__link link" href="">
+                <div class="projects__img">
                   <img
                     src="./images/portfolio2.jpg"
                     alt="двоє людей грають у баскетбол"
                     width="370"
                   />
-                  <div class="overlay">
-                    <p class="overlay-text">
+                  <div class="projects__overlay">
+                    <p class="projects__overlay-text">
                       Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores quisquam
                       quibusdam culpa ad, adipisci ratione?
                     </p>
                   </div>
                 </div>
-                <div class="projects-text-container">
-                  <h2 class="projects-subtitle">
+                <div class="projects__text-container">
+                  <h2 class="projects__subtitle">
                     Постер <span lang="en">New Orlean vs Golden Star</span>
                   </h2>
-                  <p class="projects-text">Дизайн</p>
+                  <p class="projects__text">Дизайн</p>
                 </div>
               </a>
             </li>
-            <li class="project-item">
-              <a class="projects-link link" href="">
-                <div class="img-projects">
+            <li class="projects__item">
+              <a class="projects__link link" href="">
+                <div class="projects__img">
                   <img
                     src="./images/portfolio3.jpg"
                     alt="двоє людей грають у баскетбол"
                     width="370"
                   />
-                  <div class="overlay">
-                    <p class="overlay-text">
+                  <div class="projects__overlay">
+                    <p class="projects__overlay-text">
                       Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores quisquam
                       quibusdam culpa ad, adipisci ratione?
                     </p>
                   </div>
                 </div>
-                <div class="projects-text-container">
-                  <h2 class="projects-subtitle">Ресторан <span lang="en">Seafood</span></h2>
-                  <p class="projects-text">Додаток</p>
+                <div class="projects__text-container">
+                  <h2 class="projects__subtitle">Ресторан <span lang="en">Seafood</span></h2>
+                  <p class="projects__text">Додаток</p>
                 </div>
               </a>
             </li>
-            <li class="project-item">
-              <a class="projects-link link" href="">
-                <div class="img-projects">
+            <li class="projects__item">
+              <a class="projects__link link" href="">
+                <div class="projects__img">
                   <img
                     src="./images/portfolio4.jpg"
                     alt="двоє людей грають у баскетбол"
                     width="370"
                   />
-                  <div class="overlay">
-                    <p class="overlay-text">
+                  <div class="projects__overlay">
+                    <p class="projects__overlay-text">
                       Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores quisquam
                       quibusdam culpa ad, adipisci ratione?
                     </p>
                   </div>
                 </div>
-                <div class="projects-text-container">
-                  <h2 class="projects-subtitle">Проєкт <span lang="en">Prime</span></h2>
-                  <p class="projects-text">Маркетинг</p>
+                <div class="projects__text-container">
+                  <h2 class="projects__subtitle">Проєкт <span lang="en">Prime</span></h2>
+                  <p class="projects__text">Маркетинг</p>
                 </div>
               </a>
             </li>
-            <li class="project-item">
-              <a class="projects-link link" href="">
-                <div class="img-projects">
+            <li class="projects__item">
+              <a class="projects__link link" href="">
+                <div class="projects__img">
                   <img
                     src="./images/portfolio5.jpg"
                     alt="двоє людей грають у баскетбол"
                     width="370"
                   />
-                  <div class="overlay">
-                    <p class="overlay-text">
+                  <div class="projects__overlay">
+                    <p class="projects__overlay-text">
                       Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores quisquam
                       quibusdam culpa ad, adipisci ratione?
                     </p>
                   </div>
                 </div>
-                <div class="projects-text-container">
-                  <h2 class="projects-subtitle">Проєкт <span lang="en">Boxes</span></h2>
-                  <p class="projects-text">Додаток</p>
+                <div class="projects__text-container">
+                  <h2 class="projects__subtitle">Проєкт <span lang="en">Boxes</span></h2>
+                  <p class="projects__text">Додаток</p>
                 </div>
               </a>
             </li>
-            <li class="project-item">
-              <a class="projects-link link" href="">
-                <div class="img-projects">
+            <li class="projects__item">
+              <a class="projects__link link" href="">
+                <div class="projects__img">
                   <img
                     src="./images/portfolio6.jpg"
                     alt="двоє людей грають у баскетбол"
                     width="370"
                   />
-                  <div class="overlay">
-                    <p class="overlay-text">
+                  <div class="projects__overlay">
+                    <p class="projects__overlay-text">
                       Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores quisquam
                       quibusdam culpa ad, adipisci ratione?
                     </p>
                   </div>
                 </div>
-                <div class="projects-text-container">
-                  <h2 lang="en" class="projects-subtitle">Inspiration has no Borders</h2>
-                  <p class="projects-text">Веб-сайт</p>
+                <div class="projects__text-container">
+                  <h2 lang="en" class="projects__subtitle">Inspiration has no Borders</h2>
+                  <p class="projects__text">Веб-сайт</p>
                 </div>
               </a>
             </li>
-            <li class="project-item">
-              <a class="projects-link link" href="">
-                <div class="img-projects">
+            <li class="projects__item">
+              <a class="projects__link link" href="">
+                <div class="projects__img">
                   <img
                     src="./images/portfolio7.jpg"
                     alt="двоє людей грають у баскетбол"
                     width="370"
                   />
-                  <div class="overlay">
-                    <p class="overlay-text">
+                  <div class="projects__overlay">
+                    <p class="projects__overlay-text">
                       Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores quisquam
                       quibusdam culpa ad, adipisci ratione?
                     </p>
                   </div>
                 </div>
-                <div class="projects-text-container">
-                  <h2 class="projects-subtitle">Видання <span lang="en">Limited Edition</span></h2>
-                  <p class="projects-text">Дизайн</p>
+                <div class="projects__text-container">
+                  <h2 class="projects__subtitle">Видання <span lang="en">Limited Edition</span></h2>
+                  <p class="projects__text">Дизайн</p>
                 </div>
               </a>
             </li>
-            <li class="project-item">
-              <a class="projects-link link" href="">
-                <div class="img-projects">
+            <li class="projects__item">
+              <a class="projects__link link" href="">
+                <div class="projects__img">
                   <img
                     src="./images/portfolio8.jpg"
                     alt="двоє людей грають у баскетбол"
                     width="370"
                   />
-                  <div class="overlay">
-                    <p class="overlay-text">
+                  <div class="projects__overlay">
+                    <p class="projects__overlay-text">
                       Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores quisquam
                       quibusdam culpa ad, adipisci ratione?
                     </p>
                   </div>
                 </div>
-                <div class="projects-text-container">
-                  <h2 class="projects-subtitle">Проєкт <span lang="en">LAB</span></h2>
-                  <p class="projects-text">Маркетинг</p>
+                <div class="projects__text-container">
+                  <h2 class="projects__subtitle">Проєкт <span lang="en">LAB</span></h2>
+                  <p class="projects__text">Маркетинг</p>
                 </div>
               </a>
             </li>
-            <li class="project-item">
-              <a class="projects-link link" href="">
-                <div class="img-projects">
+            <li class="projects__item">
+              <a class="projects__link link" href="">
+                <div class="projects__img">
                   <img
                     src="./images/portfolio9.jpg"
                     alt="двоє людей грають у баскетбол"
                     width="370"
                   />
-                  <div class="overlay">
-                    <p class="overlay-text">
+                  <div class="projects__overlay">
+                    <p class="projects__overlay-text">
                       Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores quisquam
                       quibusdam culpa ad, adipisci ratione?
                     </p>
                   </div>
                 </div>
-                <div class="projects-text-container">
-                  <h2 lang="en" class="projects-subtitle">Growing Business</h2>
-                  <p class="projects-text">Додаток</p>
+                <div class="projects__text-container">
+                  <h2 lang="en" class="projects__subtitle">Growing Business</h2>
+                  <p class="projects__text">Додаток</p>
                 </div>
               </a>
             </li>
@@ -332,7 +333,7 @@
             </li>
           </ul>
         </div>
-        <div class="form-footer">
+        <div class="form-container">
           <h2 class="form-container__title">Підпишіться на розсилку</h2>
           <form class="form-footer" name="subscribe_form">
             <label for="email-field">
