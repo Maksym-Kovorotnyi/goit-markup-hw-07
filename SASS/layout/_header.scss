@@ -1,15 +1,15 @@
 .page-header {
     border-bottom: 1px solid #ECECEC;
-    
     }
-    
     .header-container {
         display: flex;
         align-items: center;
-    }
-    
+    } 
     .page-nav{
         margin-right: auto;
+    }
+    .list-nav {
+        display: flex;
     }
     
     .list-nav__link{
@@ -24,18 +24,40 @@
         transition-property: color;
         transition-timing-function: var(--bezier);
         transition-duration: 250ms;
+
+        &.current{
+            color: var(--accent-color);
+            position: relative;
+        
+            &::after{
+                content: "";
+                position: absolute;
+                display: inline-block;
+                width: 100%;
+                height: 4px;
+                border-radius: 4px;
+                background-color: var(--accent-color);
+                bottom: -1px;
+                left: 0px;
+            }
+        }
         
     }
     
+    .list-nav__item:not(:last-child){
+        margin-right: 50px;
+    }
     .list-nav__link:hover,
     .list-nav__link:focus {
         color: var(--accent-color);
     }
-    .list-nav__item:not(:last-child){
-        margin-right: 50px;
-    }
     
-    .list-contact__link {
+    .contacts-container {
+        display: flex;
+        align-items: center;
+    }
+
+    .list-contacts__link {
         display: flex;
         color: var(--text);
         font-weight: 500;
@@ -49,31 +71,18 @@
         transition-property: color;
         transition-timing-function: var(--bezier);
         transition-duration: 250ms;
+
+        &:hover,
+        &:focus {
+        color: var(--accent-color);
     }
-    .list-contact__link:hover,
-    .list-contact__link:focus {
-    color: var(--accent-color);
-    }
-    
-    .list-contacts__icon {
-    fill: currentColor;
-    
-    }
-    
-    .list-contacts__icon {
-    fill: currentColor;
-    
-    }
-    
-    .list-nav {
-        display: flex;
-    }
-    
-    .contacts-container {
-        display: flex;
-        align-items: center;
+
     }
     
     .list-contacts__item:not(:last-child) {
         margin-right: 50px;
+    }
+
+    .list-contacts__icon {
+        fill: currentColor;
     }
